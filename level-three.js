@@ -12,7 +12,11 @@
     repeatString("yes", 3) => "yesyesyes"
 */
 function repeatString(message, times) {
-
+  var blank = "";
+  for(var i = 0; i <times; i++){
+blank = blank+message;
+  }
+  return blank;
 }
 
 /*
@@ -24,7 +28,13 @@ function repeatString(message, times) {
     summation(5) => 15 or (5 + 4 + 3 + 2 + 1 = 15)
 */
 function summation(number) {
-
+  
+ var sum, i;
+sum = 0;
+  for(var i = 0; i <= number; i++){
+    sum = sum + i
+  }
+return sum;
 }
 
 /*
@@ -35,5 +45,10 @@ function summation(number) {
     factorial(5) => 120 or (5 * 4 * 3 * 2 * 1 = 120)
 */
 function factorial(number) {
-
+ var sum, i;
+sum = 1;
+  for(var i = 1; i <= number; i++){
+    sum = sum * i
+  }
+return sum;
 }
